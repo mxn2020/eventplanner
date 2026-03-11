@@ -9,14 +9,15 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "stop": "pkill -f 'vite.*eventplanner' || true"
   },
   "dependencies": {
     "@convex-dev/auth": "^0.0.91",
-    "@geenius-ai/react": "^0.0.1",
-    "@geenius-auth/react": "^0.0.1",
-    "@geenius-tools/errors-react": "^0.0.1",
-    "@geenius-ui/react-css": "^0.1.4",
+    "@geenius-ai/react": "link:../../../packages/geenius-ai/packages/react",
+    "@geenius-auth/react": "link:../../../packages/geenius-auth/packages/react",
+    "@geenius-tools/errors-react": "link:../../../packages/geenius-tools/packages/errors-react",
+    "@geenius-ui/react-css": "link:../../../packages/geenius-ui/packages/react-css",
     "@vercel/analytics": "^1.6.1",
     "convex": "^1.32.0",
     "lucide-react": "^0.575.0",
@@ -27,16 +28,20 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@testing-library/react": "^16.3.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
+    "@vitest/coverage-v8": "^4.0.18",
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
+    "jsdom": "^26.1.0",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.11.0",
-    "vite": "^5.4.10"
+    "vite": "^5.4.10",
+    "vitest": "^4.0.18"
   },
   "description": "AI event coordinator generating timelines and checklists",
   "author": "Mehdi Nabhani <mehdi@geenius.app>",

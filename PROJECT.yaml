@@ -1,16 +1,18 @@
-id: 2ee0ef77-6a0f-4f0c-b62a-fc9426427a39
 name: eventplanner
-description: "AI event coordinator generating timelines and checklists"
+project_scope: main
+project_type: standalone
+description: AI event coordinator generating timelines and checklists
 tier: prototype
 lane: side-projects
 priority: low
-category: text
-focus: false
-open_tasks: 0
 oss: false
 stack: [typescript, react, convex, vite]
-repo: https://github.com/mxn2020/eventplanner
+repo: "https://github.com/mxn2020/eventplanner"
 deploy_url: null
 last_active: 2026-03-02
-tags: [ai, convex]
-notes:
+tags: [ai, convex, events, planning, scheduling, calendar, organization]
+notes: null
+category: webapp
+focus: false
+open_tasks: 0
+id: 2ee0ef77-6a0f-4f0c-b62a-fc9426427a39
